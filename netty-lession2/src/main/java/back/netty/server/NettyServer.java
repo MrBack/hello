@@ -1,6 +1,6 @@
-package com.back.netty.server;
+package back.netty.server;
 
-import com.back.config.ConfigUtils;
+import back.config.ConfigUtils;
 import com.typesafe.config.Config;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -10,7 +10,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * Lession1:简单Server -> Client 打印功能
+ * Lession2 : Server -> Client 解决Tcp粘包问题 -> LineBasedFrameDecoder , StringDecoder 按行切换的文本解码器
  */
 public class NettyServer {
 
